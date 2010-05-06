@@ -12,6 +12,8 @@ To use it the following modifications need to be made:
 
 How to use:
 
+::
+
     import users
     from twitter_oauth_handler import OAuthHandler
 

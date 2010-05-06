@@ -7,8 +7,10 @@ http://github.com/mikeknapp/AppEngine-OAuth-Library
 
 To use it the following modifications need to be made:
 
-1. twitter_oauth_handler.py: put corresponding CONSUMER_KEY and CONSUMER_SECRET,
-2. users.py: update APP_NAME (if the app main URL is not on appspot).
+1. register the application at http://twitter.com/apps/new with callback URL 
+   http://your.app.url/oauth/twitter/callback
+2. twitter_oauth_handler.py: put corresponding CONSUMER_KEY and CONSUMER_SECRET,
+3. users.py: update APP_NAME (if the app main URL is not on appspot).
 
 How to use:
 

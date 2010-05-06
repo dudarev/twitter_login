@@ -19,11 +19,15 @@ How to use:
     import users
     from twitter_oauth_handler import OAuthHandler
 
+    ...
+
     user = users.get_current_user(self)
     if user:
         login_logout_link = "<strong>%s</strong><br/><a href=\"%s\">Logout</a>" % (user, users.create_logout_url(self, "/"))
     else:
         login_logout_link = "<a href=\"%s\">Login with Twitter</a>" % users.create_login_url(self, "/")
+
+    ...
 
     application = webapp.WSGIApplication([
                                         ('/oauth/(.*)/(.*)', OAuthHandler),
